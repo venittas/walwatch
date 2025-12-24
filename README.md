@@ -1,10 +1,10 @@
 # pywalaccent
 Change wal colors based on wallpaper change
 
-# Dependencies
+### Dependency
 - [pywal](https://github.com/dylanaraps/pywal) or [pywal16](https://github.com/eylles/pywal16)
 
-# Set Up
+### Setup
 >[!NOTE] 
 > Apply the appropriate file changes when changing file locations
 
