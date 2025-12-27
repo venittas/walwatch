@@ -9,7 +9,7 @@ Change wal colors based on wallpaper change
 > Apply the appropriate file changes when changing file locations
 
 1. Move `pywalaccent.sh` on `~/.local/pywalaccent`
-2. Move `pywalaccent.service` on `~/./config/systemd/user/`
+2. Move `pywalaccent.service` on `~/.config/systemd/user/`
 3. Enable service
 ```bash
 systemctl --user daemon-reload #Reload systemd
