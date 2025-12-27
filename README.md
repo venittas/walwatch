@@ -14,9 +14,9 @@ Change wal colors based on wallpaper change
 ```bash
 systemctl --user daemon-reload #Reload systemd
 
-systemctl --user enable wallpaper-color-sync.service #Start pywalaccent.service on boot
+systemctl --user enable pywalaccent.service #Start pywalaccent.service on boot
 
-systemctl --user start wallpaper-color-sync.service #Start pywalaccent.service now
+systemctl --user start pywalaccent.service #Start pywalaccent.service now
 ```
 
 *Simple log is created in the same directory as the shell script*
