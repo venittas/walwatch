@@ -1,5 +1,5 @@
 # walwatch
-Change wal colors based on wallpaper change
+Change wal colors based on wallpaper change for DankMaterialShell (dms)
 
 ### Dependency
 - [pywal](https://github.com/dylanaraps/pywal)
