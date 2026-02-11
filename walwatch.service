@@ -1,0 +1,14 @@
+[Unit]
+Description=Change wal Colors On Wallpaper Change
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.walwatch/walwatch.sh
+Environment="PATH=/usr/local/bin:/usr/bin:/bin:%h/.local/bin"
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
