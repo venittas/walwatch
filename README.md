@@ -1,22 +1,24 @@
-# pywalaccent
+# walwatch
 Change wal colors based on wallpaper change
 
 ### Dependency
-- [pywal](https://github.com/dylanaraps/pywal) or [pywal16](https://github.com/eylles/pywal16)
+- [pywal](https://github.com/dylanaraps/pywal)
+- colorz for pywal backend
 
 ### Setup
 >[!NOTE] 
 > Apply the appropriate file changes when changing file locations
 
-1. Move `pywalaccent.sh` on `~/.local/pywalaccent`
-2. Move `pywalaccent.service` on `~/.config/systemd/user/`
+1. Create `.walwatch` directory inside `$HOME`
+1. Move `walwatch.sh` inside the created directory
+2. Move `walwatch.service` on `~/.config/systemd/user/`
 3. Enable service
 ```bash
 systemctl --user daemon-reload #Reload systemd
 
-systemctl --user enable pywalaccent.service #Start pywalaccent.service on boot
+systemctl --user enable pywalaccent.service #Enable service on boot
 
-systemctl --user start pywalaccent.service #Start pywalaccent.service now
+systemctl --user start pywalaccent.service #Start service
 ```
 
-*Simple log is created in the same directory as the shell script*
+*Log file is created in the same directory as the shell script*
