@@ -29,10 +29,10 @@ update_colors
 
 prev=""
 while true; do
+    sleep 5
     current=$(dms ipc wallpaper get)
     if [ "$current" != "$prev" ]; then
         prev="$current"
         update_colors
     fi
-    sleep 6000
 done
