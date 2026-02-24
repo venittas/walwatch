@@ -16,9 +16,9 @@ Change wal colors based on wallpaper change for DankMaterialShell (dms)
 ```bash
 systemctl --user daemon-reload #Reload systemd
 
-systemctl --user enable pywalaccent.service #Enable service on boot
+systemctl --user enable walwatch.service #Enable service on boot
 
-systemctl --user start pywalaccent.service #Start service
+systemctl --user start walwatch.service #Start service
 ```
 
 *Log file is created in the same directory as the shell script*
